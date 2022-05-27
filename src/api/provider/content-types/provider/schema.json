@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "providers",
+  "info": {
+    "singularName": "provider",
+    "pluralName": "providers",
+    "displayName": "Provider",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gender": {
+      "type": "string"
+    },
+    "birth_date": {
+      "type": "string"
+    },
+    "social_security_number": {
+      "type": "string"
+    },
+    "mobile_phone": {
+      "type": "string"
+    },
+    "local_phone": {
+      "type": "string"
+    },
+    "work_phone": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "bussines_name": {
+      "type": "string"
+    },
+    "laguages": {
+      "type": "string"
+    },
+    "bussines_images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "web_site": {
+      "type": "string"
+    },
+    "facebook_link": {
+      "type": "string"
+    },
+    "instagram_link": {
+      "type": "string"
+    },
+    "linkedin_link": {
+      "type": "string"
+    },
+    "twitter_link": {
+      "type": "string"
+    },
+    "bank_information": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bank-information.bank-information",
+      "inversedBy": "provider"
+    },
+    "client_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    }
+  }
+}

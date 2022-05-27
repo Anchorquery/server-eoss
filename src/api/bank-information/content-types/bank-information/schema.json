@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bank_informations",
+  "info": {
+    "singularName": "bank-information",
+    "pluralName": "bank-informations",
+    "displayName": "Bank Information"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "owner_name_bank": {
+      "type": "string"
+    },
+    "number_account_bank": {
+      "type": "string"
+    },
+    "number_route_bank": {
+      "type": "string"
+    },
+    "fullname_bank": {
+      "type": "string"
+    },
+    "sucursal_country_bank": {
+      "type": "string"
+    },
+    "sucursal_city_bank": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provider.provider",
+      "mappedBy": "bank_information"
+    }
+  }
+}

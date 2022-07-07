@@ -10,77 +10,61 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "gender": {
-      "type": "string"
-    },
-    "birth_date": {
-      "type": "string"
-    },
-    "social_security_number": {
-      "type": "string"
-    },
-    "mobile_phone": {
-      "type": "string"
-    },
-    "local_phone": {
-      "type": "string"
-    },
-    "work_phone": {
-      "type": "string"
-    },
-    "country": {
-      "type": "string"
-    },
-    "state": {
-      "type": "string"
-    },
-    "city": {
-      "type": "string"
-    },
-    "address": {
-      "type": "text"
-    },
-    "bussines_name": {
-      "type": "string"
-    },
-    "laguages": {
-      "type": "string"
-    },
-    "bussines_images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "web_site": {
-      "type": "string"
-    },
-    "facebook_link": {
-      "type": "string"
-    },
-    "instagram_link": {
-      "type": "string"
-    },
-    "linkedin_link": {
-      "type": "string"
-    },
-    "twitter_link": {
-      "type": "string"
-    },
-    "bank_information": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::bank-information.bank-information",
-      "inversedBy": "provider"
-    },
-    "client_id": {
+    "client": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::client.client"
+    },
+    "skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "security_number": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "address": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "city": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "state": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "birthday": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

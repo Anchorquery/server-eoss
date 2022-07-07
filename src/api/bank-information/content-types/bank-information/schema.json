@@ -28,12 +28,6 @@
     },
     "sucursal_city_bank": {
       "type": "string"
-    },
-    "provider": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::provider.provider",
-      "mappedBy": "bank_information"
     }
   }
 }

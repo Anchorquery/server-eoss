@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {
@@ -21,10 +21,10 @@
       "relation": "oneToOne",
       "target": "api::client.client"
     },
-    "skills": {
+    "categories": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::skill.skill"
+      "target": "api::category.category"
     },
     "security_number": {
       "pluginOptions": {
@@ -65,6 +65,19 @@
         }
       },
       "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

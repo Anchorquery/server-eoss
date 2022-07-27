@@ -4,10 +4,11 @@
   "info": {
     "singularName": "task",
     "pluralName": "tasks",
-    "displayName": "Task"
+    "displayName": "Task",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -18,6 +19,32 @@
     },
     "location": {
       "type": "string"
+    },
+    "task_length": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::task-length.task-length"
+    },
+    "transportation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::transportation.transportation"
+    },
+    "description": {
+      "type": "text"
+    },
+    "date": {
+      "type": "string"
+    },
+    "time_day": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::time-day.time-day"
+    },
+    "provider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provider.provider"
     }
   }
 }

@@ -7,7 +7,7 @@
     "displayName": "Transportation"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {
@@ -15,7 +15,7 @@
     }
   },
   "attributes": {
-    "name": {
+    "transport": {
       "pluginOptions": {
         "i18n": {
           "localized": true

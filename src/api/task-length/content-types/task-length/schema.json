@@ -4,10 +4,11 @@
   "info": {
     "singularName": "task-length",
     "pluralName": "task-lengths",
-    "displayName": "Task Length"
+    "displayName": "Task Length",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {

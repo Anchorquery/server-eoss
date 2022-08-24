@@ -1,7 +1,7 @@
 
-import forgotPasswordTemplate from './email-templates/forgot-password';
+const forgotPasswordTemplate = require('./email-templates/forgot-password');
 
-export default ({ env }) => ({
+module.exports = ({ env }) => ({
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
   },

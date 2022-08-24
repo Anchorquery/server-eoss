@@ -8,7 +8,7 @@ const html = `<p>Hi <%= user.firstname %></p>
 const text = `Hi <%= user.firstname %>
 Sorry you lost your password. You can click here to reset it: <%= url %>`;
 
-export default {
+module.exports={
   subject,
   text,
   html,

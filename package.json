@@ -14,6 +14,7 @@
     "@strapi/plugin-graphql": "^4.1.8",
     "@strapi/plugin-i18n": "4.1.8",
     "@strapi/plugin-users-permissions": "4.1.8",
+    "@strapi/provider-email-sendgrid": "^4.3.6",
     "@strapi/strapi": "4.1.8",
     "mysql": "2.18.1",
     "strapi-plugin-io": "^1.1.0",

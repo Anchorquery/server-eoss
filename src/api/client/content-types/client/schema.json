@@ -24,9 +24,6 @@
     "email": {
       "type": "email"
     },
-    "password": {
-      "type": "password"
-    },
     "postal_code": {
       "type": "string"
     },
@@ -37,9 +34,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "username": {
-      "type": "string"
     },
     "phone": {
       "type": "string"

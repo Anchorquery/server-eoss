@@ -1,5 +1,4 @@
 
-const forgotPasswordTemplate = require('./email-templates/forgot-password');
 
 module.exports = ({ env }) => ({
   auth: {
@@ -11,6 +10,5 @@ module.exports = ({ env }) => ({
   forgotPassword: {
     from: 'joangelr5@gmail.com',
     replyTo: 'joangelr5@gmail.com',
-    emailTemplate: forgotPasswordTemplate,
   },
 });
